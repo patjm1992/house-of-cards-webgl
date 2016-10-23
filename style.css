@@ -17,36 +17,86 @@ body {
 	src : url(fgm.ttf)
 }
 
+
+
 #title {
 	position: absolute;
 	top: 0px;
 	width: 100%;
 	padding: 10px;
 	font-family: in_rainbows;
-	font-size: 36px;
+	font-size: 40px;
 	text-align: center;
 }
 
 .first a {
 	color: #FDEF70;
-	 position: fixed;
-  
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	letter-spacing: 2px;
 }
-
 
 .second a {
 	color: #629ED3;
+    position: fixed;
+    top: 19.28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	letter-spacing: 2px;
 }
 
 .third a {
-	color: #AE5C1C;
+	color: #ED7D26;
+    position: fixed;
+    top: 33.56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	letter-spacing: 2px;
 }
+
+.fourth a {
+	color: #73BE48;
+    position: fixed;
+    top: 47.84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	letter-spacing: 2px;
+}
+
+.fifth a {
+	color: #E8BD3D;
+    position: fixed;
+    top: 62.12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	letter-spacing: 2px;
+} 
+
+.sixth a {
+	color: #EB3D28;
+    position: fixed;
+    top: 76.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	letter-spacing: 2px;
+}
+
+.seventh a {
+	color: #C3E4EA;
+    position: fixed;
+    top: 90.68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	letter-spacing: 2px;
+}
+
 
 a {
 	text-decoration: none;
+	letter-spacing: 4px!important;
+	white-space: nowrap!important;
+
 }
+

@@ -1,5 +1,7 @@
-(function() {
-    'use strict';
+'use strict';
+
+function simulation {
+
 
     var scene, camera, renderer, controls;
     var container;
@@ -92,7 +94,7 @@
             color = parameters[i][0];
             size = parameters[i][1];
 
-            materials[i] = new THREE.PointsMaterial({size: 1});
+            materials[i] = new THREE.PointsMaterial({size: });
 
       var pMaterial = new THREE.ParticleBasicMaterial({
   size: 2,
@@ -102,13 +104,13 @@
   blending: THREE.AdditiveBlending,
   transparent: true
 });
-//            particles = new THREE.PointCloud(geometry, materials[i]);
+            particles = new THREE.PointCloud(geometry, materials[i]);
               var particle = new THREE.PointCloud(geometry, pMaterial);
 
 
 
 
-            scene.add(particle);
+            scene.add(particles);
         }
 
         renderer = new THREE.WebGLRenderer(); 
