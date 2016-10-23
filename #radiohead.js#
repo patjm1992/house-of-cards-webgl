@@ -92,23 +92,10 @@
             color = parameters[i][0];
             size = parameters[i][1];
 
-            materials[i] = new THREE.PointsMaterial({size: 1});
+            materials[i] = new THREE.PointCloudMaterial({size: 1});
 
-      var pMaterial = new THREE.ParticleBasicMaterial({
-  size: 2,
-  map: THREE.ImageUtils.loadTexture(
-    "particle.png"
-  ),
-  blending: THREE.AdditiveBlending,
-  transparent: true
-});
-//            particles = new THREE.PointCloud(geometry, materials[i]);
-              var particle = new THREE.PointCloud(geometry, pMaterial);
-
-
-
-
-            scene.add(particle);
+            particles = new THREE.PointCloud(geometry, materials[i]);
+            scene.add(particles);
         }
 
         renderer = new THREE.WebGLRenderer(); 
@@ -125,7 +112,7 @@
 
     function animate() {
 
-	    requestAnimationFrame(animate);
+        requestAnimationFrame(animate);
         controls.update();
         render();
     }

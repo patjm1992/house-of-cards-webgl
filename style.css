@@ -1,0 +1,52 @@
+
+canvas {
+	width: 100%; 
+	height: 100% 
+}
+
+body {
+	color: #ffffff;
+	background-color: #000000;
+	margin: 0px;
+	overflow: hidden;
+}
+
+
+@font-face {
+	font-family: in_rainbows;
+	src : url(fgm.ttf)
+}
+
+#title {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 10px;
+	font-family: in_rainbows;
+	font-size: 36px;
+	text-align: center;
+}
+
+.first a {
+	color: #FDEF70;
+	 position: fixed;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+.second a {
+	color: #629ED3;
+}
+
+.third a {
+	color: #AE5C1C;
+}
+
+a {
+	text-decoration: none;
+}
