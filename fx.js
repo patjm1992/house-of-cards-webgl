@@ -1,22 +1,11 @@
 $("html").click(function() {
-	var speed = 500;
+	var speed = 1000;
 
-
-$('#second').animate({'opacity': 0}, 1000, function () {
-    $(this).text('SO URCE O_N / GIT HU B');
-}).animate({'opacity': 1}, 1000);
-
-
-	//$("#second").fadeOut(speed);
-	$("#third").fadeOut(speed * 2);
-	$("#fourth").fadeOut(speed * 3);
-	$("#fifth").fadeOut(speed * 4);
-	$("#sixth").fadeOut(speed * 5);
-	$("#seventh").fadeOut(speed * 6);
-
-			
-
-
-
-
+	$("#second").fadeIn(speed);
+	$("#third").fadeIn(speed * 2);
+	$("#fourth").fadeIn(speed * 3);
+	$("#fifth").fadeIn(speed * 4);
+	$("#sixth").fadeIn(speed * 5);
+	$("#seventh").fadeIn(speed * 6);
 });
+

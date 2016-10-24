@@ -17,46 +17,70 @@ body {
 }
 
 .title {
-	position: absolute;
+
 	top: 0px;
-	width: 100%;
+
 	font-family: in_rainbows;
 	font-size: 18px;
-	text-align: center;
+	position: fixed;
+
+}
+
+.links {
+
+	top: 0px;
+	color: inherit;
+	font-family: in_rainbows;
+	font-size: 18px;
+	position: fixed;
+	text-decoration: none;
 }
 
 a {
+	text-align: right!important;
+	float: right;
 	text-decoration: none;
+
 	letter-spacing: 4px!important;
 	white-space: nowrap!important;
 }
 
+.links a:hover {
+	opacity: 0.75;
+}
+
+a:link {
+	text-decoration: none;
+	color: #C3E4EA;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #C3E4EA;
+}
+
+
 #first {
 	color: #FDEF70;
     position: fixed;
+
     top: 5%;
     left: 81%;
     transform: translate(-50%, -50%);
 }
 
 #second {
+	display: none;
+	position: fixed;
 	color: #629ED3;
-    position: fixed;
     top: 7.5%;
     left: 81%;
     transform: translate(-50%, -50%);
 }
 
-#link1 {
-	text-align: left!important;
-	color: #629ED3;
-    position: fixed;
-    top: 7.5%;
-    left: 81%;
-    transform: translate(-50%, -50%);
-}
 
 #third {
+		display: none;
 	color: #ED7D26;
     position: fixed;
     top: 10%;
@@ -66,6 +90,7 @@ a {
 }
 
 #fourth {
+		display: none;
 	color: #73BE48;
     position: fixed;
     top: 12.5%;
@@ -75,6 +100,7 @@ a {
 }
 
 #fifth {
+		display: none;
 	color: #E8BD3D;
     position: fixed;
     top: 15%;
@@ -84,6 +110,7 @@ a {
 } 
 
 #sixth {
+		display: none;
 	color: #EB3D28;
     position: fixed;
     top: 17.5%;
@@ -93,14 +120,15 @@ a {
 }
 
 #seventh {
-	color: #C3E4EA;
+		display: none;
+
+	color: #C3E4EA!important;
     position: fixed;
+    text-decoration: none;
     top: 20%;
-    left: 81%;
+    left: 76.85%;
     transform: translate(-50%, -50%);
 	letter-spacing: 2px;
 }
-
-
 
 
