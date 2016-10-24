@@ -1,3 +1,3 @@
-$("a").click(function() {
+$("html").click(function() {
 	$("a").fadeOut("slow");
 });

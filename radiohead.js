@@ -1,7 +1,5 @@
-'use strict';
-
-function simulation {
-
+(function() {
+    'use strict';
 
     var scene, camera, renderer, controls;
     var container;
@@ -94,7 +92,7 @@ function simulation {
             color = parameters[i][0];
             size = parameters[i][1];
 
-            materials[i] = new THREE.PointsMaterial({size: });
+            materials[i] = new THREE.PointsMaterial({size: 1});
 
       var pMaterial = new THREE.ParticleBasicMaterial({
   size: 2,
