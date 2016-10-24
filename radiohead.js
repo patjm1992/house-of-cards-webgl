@@ -106,7 +106,7 @@ camera.position.x = 600.61894845835195;
 
             sprite = new THREE.TextureLoader().load( "ball.png" );
 
-            pMat = new THREE.PointsMaterial({size: 3,
+            pMat = new THREE.PointsMaterial({size: 4,
                                                  sizeAttenuation: false,
                                                  map: sprite,
                                                  alphaTest: 0.5,
