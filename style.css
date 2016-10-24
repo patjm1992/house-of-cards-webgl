@@ -27,7 +27,6 @@ body {
 }
 
 .links {
-
 	top: 0px;
 	color: inherit;
 	font-family: in_rainbows;
@@ -40,7 +39,6 @@ a {
 	text-align: right!important;
 	float: right;
 	text-decoration: none;
-
 	letter-spacing: 4px!important;
 	white-space: nowrap!important;
 }
@@ -59,11 +57,9 @@ a:visited {
 	color: #C3E4EA;
 }
 
-
 #first {
 	color: #FDEF70;
     position: fixed;
-
     top: 5%;
     left: 81%;
     transform: translate(-50%, -50%);
@@ -78,9 +74,8 @@ a:visited {
     transform: translate(-50%, -50%);
 }
 
-
 #third {
-		display: none;
+	display: none;
 	color: #ED7D26;
     position: fixed;
     top: 10%;
@@ -90,7 +85,7 @@ a:visited {
 }
 
 #fourth {
-		display: none;
+	display: none;
 	color: #73BE48;
     position: fixed;
     top: 12.5%;
@@ -100,7 +95,7 @@ a:visited {
 }
 
 #fifth {
-		display: none;
+	display: none;
 	color: #E8BD3D;
     position: fixed;
     top: 15%;
@@ -110,7 +105,7 @@ a:visited {
 } 
 
 #sixth {
-		display: none;
+	display: none;
 	color: #EB3D28;
     position: fixed;
     top: 17.5%;
@@ -120,8 +115,7 @@ a:visited {
 }
 
 #seventh {
-		display: none;
-
+	display: none;
 	color: #C3E4EA!important;
     position: fixed;
     text-decoration: none;

@@ -1,6 +1,6 @@
-(function() {
-    'use strict';
+'use strict';
 
+(function() {
     var scene, camera, renderer, controls;
     var container;
     var HEIGHT;
@@ -41,21 +41,10 @@
         nearPlane = 1;
         farPlane = 3000;
 
-       
-
-   //     camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
-//      camera.position.x = 250;
-	 //   camera.position.y = 136;
-	  //  camera.position.z = 300;
-
-      camera = new THREE.PerspectiveCamera(-60, window.innerWidth / window.innerHeight, 1, 3000 );
-    //            camera.position.z = 300;
-//
-  //      camera.position.x = 550;
-
-camera.position.z = -70.56617015303723;
-camera.position.y = 99.01365582308324;
-camera.position.x = 600.61894845835195;
+        camera = new THREE.PerspectiveCamera(-60, window.innerWidth / window.innerHeight, 1, 3000 );
+        camera.position.z = -70.56617015303723;
+        camera.position.y = 99.01365582308324;
+        camera.position.x = 600.61894845835195;
 
         controls = new THREE.TrackballControls(camera);
 	    controls.rotateSpeed = 3.0;
@@ -107,18 +96,11 @@ camera.position.x = 600.61894845835195;
             sprite = new THREE.TextureLoader().load( "ball.png" );
 
             pMat = new THREE.PointsMaterial({size: 4,
-                                                 sizeAttenuation: false,
-                                                 map: sprite,
-                                                 alphaTest: 0.5,
-                                                 transparent: true
+                                             sizeAttenuation: false,
+                                             map: sprite,
+                                             alphaTest: 0.5,
+                                             transparent: true
             });
-
-/*            var pMaterial = new THREE.ParticleBasicMaterial({
-                          size: 2,
-                          map: THREE.ImageUtils.loadTexture("ball.png"),
-                          blending: THREE.AdditiveBlending,
-                          transparent: true
-            });*/
             
             particles = new THREE.PointCloud(geometry, materials[i]);
             var particle = new THREE.PointCloud(geometry, pMat);;
