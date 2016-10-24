@@ -14,6 +14,8 @@
     var color;
     var size;
     var materials = [];
+    var sprite;
+    var pMat;
     var mouseX = 0;
     var mouseY = 0;
     var windowHalfX;
@@ -39,13 +41,21 @@
         nearPlane = 1;
         farPlane = 3000;
 
-        fogHex = 0x000000; 
-        fogDensity = 0.001;
+       
 
-        camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
-	    camera.position.x = 250;
-	    camera.position.y = 136;
-	    camera.position.z = 300;
+   //     camera = new THREE.PerspectiveCamera(fieldOfView, aspectRatio, nearPlane, farPlane);
+//      camera.position.x = 250;
+	 //   camera.position.y = 136;
+	  //  camera.position.z = 300;
+
+      camera = new THREE.PerspectiveCamera(-60, window.innerWidth / window.innerHeight, 1, 3000 );
+    //            camera.position.z = 300;
+//
+  //      camera.position.x = 550;
+
+camera.position.z = -70.56617015303723;
+camera.position.y = 99.01365582308324;
+camera.position.x = 600.61894845835195;
 
         controls = new THREE.TrackballControls(camera);
 	    controls.rotateSpeed = 3.0;
@@ -59,7 +69,7 @@
         controls.addEventListener('change', render);
 
         scene = new THREE.Scene();
-        scene.fog = new THREE.FogExp2(fogHex, fogDensity);
+        scene.fog = new THREE.FogExp2( 0x000000, 0.001);
 
         container = document.createElement('div');
         document.body.appendChild(container);
@@ -94,21 +104,26 @@
 
             materials[i] = new THREE.PointsMaterial({size: 1});
 
-      var pMaterial = new THREE.ParticleBasicMaterial({
-  size: 2,
-  map: THREE.ImageUtils.loadTexture(
-    "particle.png"
-  ),
-  blending: THREE.AdditiveBlending,
-  transparent: true
-});
+            sprite = new THREE.TextureLoader().load( "ball.png" );
+
+            pMat = new THREE.PointsMaterial({size: 3,
+                                                 sizeAttenuation: false,
+                                                 map: sprite,
+                                                 alphaTest: 0.5,
+                                                 transparent: true
+            });
+
+/*            var pMaterial = new THREE.ParticleBasicMaterial({
+                          size: 2,
+                          map: THREE.ImageUtils.loadTexture("ball.png"),
+                          blending: THREE.AdditiveBlending,
+                          transparent: true
+            });*/
+            
             particles = new THREE.PointCloud(geometry, materials[i]);
-              var particle = new THREE.PointCloud(geometry, pMaterial);
+            var particle = new THREE.PointCloud(geometry, pMat);;
 
-
-
-
-            scene.add(particles);
+            scene.add(particle);
         }
 
         renderer = new THREE.WebGLRenderer(); 
@@ -149,6 +164,7 @@
             color = parameters[i][0];
             h = (360 * (color[0] + time) % 360) / 360;
             materials[i].color.setHSL(h, color[1], color[2]);
+            pMat.color.setHSL(h, color[1], color[2]);
         }
 
         renderer.render(scene, camera);
@@ -157,6 +173,7 @@
     function onDocumentMouseMove(e) {
         mouseX = e.clientX - windowHalfX;
         mouseY = e.clientY - windowHalfY;
+
     }
 
     function onDocumentTouchStart(e) {
