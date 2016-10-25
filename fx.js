@@ -11,8 +11,8 @@
 
 */
 
-$('#first').letterFade({
+$('#first, #second, #third, #fourth, #fifth, #sixth, #seventh').letterFade({
     fade: 'in',   // fade letters 'in' or 'out'
-    duration: 400,  // how long the fade lasts per-letter
-    delay: 10  // how long to wait between letters
+    duration: 100,  // how long the fade lasts per-letter
+    delay: 1  // how long to wait between letters
 });

@@ -21,8 +21,10 @@ body {
 
 .title {
 	font-family: in_rainbows;
-	font-size: 48px;
+	font-size: 72px;
 	position: fixed;
+	padding-top: 10px;
+	padding-bottom: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -34,14 +36,40 @@ body {
 #first {
 	color: #FDEF70;
 }
-#second {
 
-	position: fixed;
+#second {
 	color: #629ED3;
-    top: 7.5%;
-    left: 81%;
-    transform: translate(-50%, -50%);
 }
+
+#third {
+
+	color: #ED7D26;
+
+}
+
+#fourth {
+
+	color: #73BE48;
+
+}
+#fifth {
+	
+	color: #E8BD3D;
+    
+} 
+
+#sixth {
+	
+	color: #EB3D28;
+    
+}
+
+#seventh {
+	
+	color: #C3E4EA
+    
+}
+
 /**
 .title {
 
