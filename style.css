@@ -23,8 +23,7 @@ body {
 	font-family: in_rainbows;
 	font-size: 72px;
 	position: fixed;
-	padding-top: 10px;
-	padding-bottom: 10px;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -68,6 +67,27 @@ body {
 	
 	color: #C3E4EA
     
+}
+
+
+#eighth {
+	color: #FDEF70;
+}
+
+#ninth {
+	color: #629ED3;
+}
+
+#tenth {
+
+	color: #ED7D26;
+
+}
+
+#eleventh {
+
+	color: #73BE48;
+
 }
 
 /**
