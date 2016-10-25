@@ -1,4 +1,4 @@
-$("html").click(function() {
+/*$("html").click(function() {
 	var speed = 1000;
 
 	$("#second").fadeIn(speed);
@@ -9,3 +9,4 @@ $("html").click(function() {
 	$("#seventh").fadeIn(speed * 6);
 });
 
+*/
