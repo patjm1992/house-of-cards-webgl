@@ -13,6 +13,15 @@
 
 $('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh').letterFade({
     fade: 'in',   // fade letters 'in' or 'out'
-    duration: 75,  // how long the fade lasts per-letter
-    delay: 1  // how long to wait between letters
+    duration: 100,  // how long the fade lasts per-letter
+    delay: 0  // how long to wait between letters
+});
+
+$("html").click(function() {
+	$('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh').letterFade({
+    fade: 'out',   // fade letters 'in' or 'out'
+    duration: 50,  // how long the fade lasts per-letter
+    delay: -100  // how long to wait between letters
+});
+
 });
