@@ -1,7 +1,7 @@
 
 canvas {
 	width: 100%; 
-	height: 100% 
+	height: 100%;
 	background-color: #FFFFFF;
 }
 
@@ -34,7 +34,14 @@ body {
 #first {
 	color: #FDEF70;
 }
+#second {
 
+	position: fixed;
+	color: #629ED3;
+    top: 7.5%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+}
 /**
 .title {
 
