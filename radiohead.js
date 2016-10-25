@@ -79,6 +79,10 @@ document.onclick = function(){
 	        vertex.y = frame_one[i + 1];
 	        vertex.z = frame_one[i + 2];
             geometry.vertices.push(vertex);
+
+
+            
+
         }
 
         parameters = [[[1, 1, 0.5], 5], 
@@ -89,27 +93,37 @@ document.onclick = function(){
 
         parameterCount = parameters.length;
 
+          
+
         for (var i = 0; i < parameterCount; i++) {
 
-            color = parameters[i][0];
+
+
             size = parameters[i][1];
 
             materials[i] = new THREE.PointsMaterial({size: 1});
 
             sprite = new THREE.TextureLoader().load( "ball.png" );
 
-            pMat = new THREE.PointsMaterial({size: 4,
+            pMat = new THREE.PointsMaterial({color: Math.random() * 0x808080 + 0x808080, 
+                                             size: 4,
                                              sizeAttenuation: false,
                                              map: sprite,
                                              alphaTest: 0.5,
                                              transparent: true
             });
             
-            particles = new THREE.PointCloud(geometry, materials[i]);
-            var particle = new THREE.PointCloud(geometry, pMat);;
+           
+          //  scene.add(randPart);
+
+           
+       var particle = new THREE.PointCloud(geometry, pMat);
+
+
 
             scene.add(particle);
         }
+                
 
         renderer = new THREE.WebGLRenderer(); 
         renderer.setPixelRatio(window.devicePixelRatio); 

@@ -10,7 +10,7 @@
 });
 
 */
-
+/*
 $('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh').letterFade({
     fade: 'in',   // fade letters 'in' or 'out'
     duration: 100,  // how long the fade lasts per-letter
@@ -24,4 +24,4 @@ $("html").click(function() {
     delay: -100  // how long to wait between letters
 });
 
-});
+});*/
