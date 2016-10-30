@@ -18,10 +18,12 @@ $('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, 
 });
 
 $("html").click(function() {
-	$('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh').letterFade({
-    fade: 'out',   // fade letters 'in' or 'out'
-    duration: 50,  // how long the fade lasts per-letter
-    delay: -100  // how long to wait between letters
-});
+	var speed = 1000;
 
+	$("#second").fadeIn(speed);
+	$("#third").fadeIn(speed * 2);
+	$("#fourth").fadeIn(speed * 3);
+	$("#fifth").fadeIn(speed * 4);
+	$("#sixth").fadeIn(speed * 5);
+	$("#seventh").fadeIn(speed * 6);
 });
