@@ -83,16 +83,42 @@ font-size: calc(112.5% + 1vw) ;
 }
 
 #tenth {
-
+	position: fixed;
 	color: #ED7D26;
-
+	top: 1%;
+	left: 1.5%;
+	font-family: in_rainbows;
+	font-size: 20px;
+	white-space: nowrap;
+    letter-spacing: 4px;
 }
 
 #eleventh {
-
+	position: fixed;
+	top: 3.5%;
+	left: 1.5%;
 	color: #73BE48;
-
+font-family: in_rainbows;
+	font-size: 20px;
+	white-space: nowrap;
+    letter-spacing: 4px;
 }
+
+
+a:hover {
+	opacity: 0.75;
+}
+
+a:link {
+	text-decoration: none;
+	color: #C3E4EA;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #C3E4EA;
+}
+
 
 /**
 .title {

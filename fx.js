@@ -12,11 +12,13 @@
 */
 $(document).ready(function() {
 
-	$('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh').letterFade({
+	$('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth').letterFade({
 	    fade: 'in',   // fade letters 'in' or 'out'
 	    duration: 25,  // how long the fade lasts per-letter
 	    delay: -10  // how long to wait between letters
 	});
+
+	$("#tenth, #eleventh").hide();
 
 	$("html").click(function () {
 		speed = 1000;
@@ -29,5 +31,8 @@ $(document).ready(function() {
     	$("#eighth").fadeOut(speed);
 		$("#ninth").fadeOut(speed);
 				$("#first").fadeOut(speed);
+
+		$("#tenth").fadeIn(speed);
+		$("#eleventh").fadeIn(speed);
 	})
 });
