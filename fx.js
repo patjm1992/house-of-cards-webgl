@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	$('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth').letterFade({
 	    fade: 'in',   // fade letters 'in' or 'out'
-	    duration: 25,  // how long the fade lasts per-letter
+	    duration: 35,  // how long the fade lasts per-letter
 	    delay: -10  // how long to wait between letters
 	});
 
