@@ -61,16 +61,17 @@ font-size: calc(112.5% + 1vw) ;
 } 
 
 #sixth {
-	
+	display: inline-block;;
 	color: #EB3D28;
     
 }
 
 #seventh {
-	
-	color: #C3E4EA
-    
+
+	color: #C3E4EA!important;
+
 }
+
 
 
 #eighth {
