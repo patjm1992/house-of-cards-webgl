@@ -1,7 +1,7 @@
 'use strict';
 
 document.onclick = function(){
- 
+
 
 
     var scene, camera, renderer, controls;
@@ -22,7 +22,7 @@ document.onclick = function(){
     var mouseX = 0;
     var mouseY = 0;
     var windowHalfX;
-    var windowHalfY; 
+    var windowHalfY;
     var fogHex;
     var fogDensity;
     var parameters = {};
@@ -79,13 +79,9 @@ document.onclick = function(){
 	        vertex.y = frame_one[i + 1];
 	        vertex.z = frame_one[i + 2];
             geometry.vertices.push(vertex);
-
-
-            
-
         }
 
-        parameters = [[[1, 1, 0.5], 5], 
+        parameters = [[[1, 1, 0.5], 5],
                      [[0.95, 1, 0.5], 4],
                      [[0.90, 1, 0.5], 3],
                      [[0.85, 1, 0.5], 2],
@@ -93,40 +89,28 @@ document.onclick = function(){
 
         parameterCount = parameters.length;
 
-          
+
 
         for (var i = 0; i < parameterCount; i++) {
 
-
-
             size = parameters[i][1];
-
             materials[i] = new THREE.PointsMaterial({size: 1});
-
             sprite = new THREE.TextureLoader().load( "ball.png" );
-
-            pMat = new THREE.PointsMaterial({color: Math.random() * 0x808080 + 0x808080, 
+            pMat = new THREE.PointsMaterial({color: Math.random() * 0x808080 + 0x808080,
                                              size: 4,
                                              sizeAttenuation: false,
                                              map: sprite,
                                              alphaTest: 0.5,
                                              transparent: true
             });
-            
-           
-          //  scene.add(randPart);
 
-           
-       var particle = new THREE.PointCloud(geometry, pMat);
-
-
-
-            scene.add(particle);
+           var particle = new THREE.PointCloud(geometry, pMat);
+           scene.add(particle);
         }
-                
 
-        renderer = new THREE.WebGLRenderer(); 
-        renderer.setPixelRatio(window.devicePixelRatio); 
+
+        renderer = new THREE.WebGLRenderer();
+        renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(WIDTH, HEIGHT);
 
         container.appendChild(renderer.domElement);
@@ -145,7 +129,7 @@ document.onclick = function(){
     }
 
     function render() {
-       
+
         var time = Date.now() * 0.00005;
 
         for (var i = 0; i < scene.children.length; i++) {
@@ -204,6 +188,4 @@ document.onclick = function(){
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
     }
-
-
 }
