@@ -12,7 +12,7 @@
 */
 $(document).ready(function() {
 
-	$("#title").letterFade({
+	$("title").letterFade({
 	    fade: 'in',   // fade letters 'in' or 'out'
 	    duration: 35,  // how long the fade lasts per-letter
 	    delay: -10  // how long to wait between letters
