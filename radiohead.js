@@ -2,8 +2,6 @@
 
 document.onclick = function(){
 
-
-
     var scene, camera, renderer, controls;
     var container;
     var HEIGHT;

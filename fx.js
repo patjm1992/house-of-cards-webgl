@@ -12,12 +12,12 @@
 */
 $(document).ready(function() {
 
-	$('#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth').letterFade({
+	$("#title").letterFade({
 	    fade: 'in',   // fade letters 'in' or 'out'
 	    duration: 35,  // how long the fade lasts per-letter
 	    delay: -10  // how long to wait between letters
 	});
-
+/*
 	$("#tenth, #eleventh").hide();
 
 	$("html").click(function () {
@@ -34,5 +34,5 @@ $(document).ready(function() {
 
 		$("#tenth").fadeIn(speed);
 		$("#eleventh").fadeIn(speed);
-	})
+	})*/
 });

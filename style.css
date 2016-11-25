@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy');
 
 body {
-	background-color: #000000;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background-color: rgb(10, 10, 10);
 	text-rendering: optimizeLegibility;
 	-moz-font-feature-settings: "kern", "liga", "clig", "calt";
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -12,23 +14,29 @@ body {
 }
 
 h1 {
+	margin: 3% 3% 3% 6.5%;
 	font-family: 'Raleway', sans-serif;
-	font-size: 50px;
+	font-size: 5vmax;
 	letter-spacing: 6px;
 	font-weight: 400;
-	margin: 0 0 0 0;
-	padding: 0 0 0 0;
 }
 
-
+h4 {
+	margin: 0% 3% 6% 6.5%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5vmax;
+	font-weight: 400;
+	color: #C3E4EA;
+}
 
 p {
-
+	margin: 3% 3% 5% 10.5%;
 	font-family: 'Raleway', serif;
 	color: #C3E4EA; /* Blue (lighter) */
 	font-weight: 400;
-	font-size: 22px;
+	font-size: 4vmin;
 	line-height: 135%;
+	text-indent: 5vmin;
 }
 
 #l1 {
