@@ -12,12 +12,21 @@
 */
 $(document).ready(function() {
 
-	$("title").letterFade({
+	$("#title").typed({
+	            stringsElement: $('give me five'),
+	            typeSpeed: 0
+	        });
+	    });
+/*
+	$("#title").letterFade({
 	    fade: 'in',   // fade letters 'in' or 'out'
 	    duration: 35,  // how long the fade lasts per-letter
 	    delay: -10  // how long to wait between letters
 	});
-/*
+
+
+
+
 	$("#tenth, #eleventh").hide();
 
 	$("html").click(function () {

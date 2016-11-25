@@ -18,7 +18,7 @@ body {
 header {
 	margin: 0 0 5% 0;
 	padding: 0 0 5% 0;
-	background-image: url("particles.jpg");
+	/*background-image: url("particles.jpg");*/
 }
 
 #title {
@@ -30,9 +30,17 @@ header {
 
 
 h1 {
-	margin: 3% 3% 3% 4.5%;
+	margin: 3% 3% 1.75% 4.5%;
 	font-family: 'Raleway', sans-serif;
-	font-size: 5.5vmax;
+	font-size: 8.5vw;
+	letter-spacing: 6px;
+	font-weight: 450;
+}
+
+h2 {
+	margin: 2% 3% 3% 4.5%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 3.5vw;
 	letter-spacing: 6px;
 	font-weight: 450;
 }
@@ -57,6 +65,14 @@ p {
 	font-size: 4vmin;
 	line-height: 135%;
 	text-indent: 5vmin;
+}
+
+p::first-letter {
+    font-size: 250%;
+    color: #8A2BE2;
+
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 img {

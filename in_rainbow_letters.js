@@ -7,7 +7,7 @@ var IDs = ["l1", "l2", "l3", "l4", "l5",
 			   "l6", "l7", "l8", "l9", "l10", "l11"];
 
 var color_ct = 0
-console.log(letters.length);
+
 
 for (var i = 0; i < letters.length; i++) {
 	/* Wrap colors */
@@ -21,6 +21,7 @@ for (var i = 0; i < letters.length; i++) {
 	}
 
 	newSpan += "<span id=" + IDs[color_ct] + ">" + letters[i] + "<\/span>";
+	console.log(newSpan);
 	color_ct += 1;
 }
 
@@ -35,7 +36,6 @@ var IDs = ["l1", "l2", "l3", "l4", "l5",
 			   "l6", "l7", "l8", "l9", "l10", "l11"];
 
 var color_ct = 0
-console.log(letters.length);
 
 for (var i = 0; i < letters.length; i++) {
 	/* Wrap colors */
