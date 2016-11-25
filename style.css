@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 @import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy');
 
+
+
 body {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -13,12 +15,26 @@ body {
     font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+header {
+	margin: 0 0 5% 0;
+	padding: 0 0 5% 0;
+	background-image: url("particles.jpg");
+}
+
+#title {
+	margin-top: 0;
+	-webkit-box-shadow: -12px 10px 77px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: -12px 10px 77px 0px rgba(0,0,0,0.31);
+	box-shadow: -12px 10px 77px 0px rgba(0,0,0,0.31);
+}
+
+
 h1 {
 	margin: 3% 3% 3% 4.5%;
 	font-family: 'Raleway', sans-serif;
 	font-size: 5.5vmax;
 	letter-spacing: 6px;
-	font-weight: 400;
+	font-weight: 450;
 }
 
 h4 {
@@ -28,6 +44,10 @@ h4 {
 	font-weight: 400;
 	color: #C3E4EA;
 }
+
+/*#caption {
+	margin-bottom: 12%;
+}*/
 
 p {
 	margin: 3% 3% 6% 8.5%;
@@ -83,7 +103,7 @@ img {
 }
 
 #l10 {
-	color:#EB2421;
+	color: #EB2421;
 }
 
 #l11 {
@@ -104,6 +124,7 @@ a {
 	padding: 0;
 	margin-left: 5%;
 	margin-bottom: 15;
+	margin-right: 3%;
 }
 
 a:hover {
@@ -120,12 +141,28 @@ a:visited {
 	color: #C3E4EA;
 }
 
+#copyright {
+	float: right;
+}
+
+#copyright:hover {
+	opacity: 1;
+}
+
+#sep:hover {
+	opacity: 1;
+}
+
 #inspo {
 	color: #73BE48;
 }
 
 #source {
-	color: #73BE48;
+	color: #EB2421;
+}
+
+#video {
+	color: #629ED3;
 }
 
 hr {
