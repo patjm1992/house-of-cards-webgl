@@ -38,11 +38,15 @@ h1 {
 }
 
 .art-text-container h1 {
-	margin: -2% 5% -2% 4.5%;
-	letter-spacing: 9px;
-	text-align: center;
-	 text-align: justify;
+	margin: -2% 11% -2% 11%;
+	letter-spacing: 8px;
+	text-align: justify;
     text-justify: inter-word;
+}
+
+.art-text-container {
+	margin-top: 10%;
+	margin-bottom: 14%;
 }
 
 h2 {
@@ -82,7 +86,7 @@ p {
 	text-indent: 5vmin;
 }
 
-p::first-letter {
+.first::first-letter {
     font-size: 250%;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -90,16 +94,16 @@ p::first-letter {
 
 
 /* Letter Colors */
-#l1 { color: #FDEF70; } /* Yellow */
-#l2 { color: #629ED3; } /* Blue */
-#l3 { color: #73BE48; } /* Green */
-#l4 { color: #ED7D26; } /* Orange */
-#l5 { color: #E0B235; } /* Darker yellow */
-#l6 { color: #C3E4EA; } /* Lighter blue */
+#l1 { color: #F3E83C; } /* Yellow */
+#l2 { color: #3973BB; } /* Blue */
+#l3 { color: #39AF36; } /* Green */
+#l4 { color: #EB4B1B; } /* Orange */
+#l5 { color: #DFA20B; } /* Darker yellow */
+#l6 { color: #94D4E2; } /* Lighter blue */
 #l8 { color: #3884C7; } /* Darker blue */
 #l7 { color: #FDF49B; } /* Lighter yellow */
 #l9 { color: #ED7D26; } /* Orange again, lol */
-#l10 { color: #E91916; } /* Red */
+#l10 { color: #DC001E; } /* Red */
 #l11 { color: #599735; } /* Darker green */
 
 footer {
@@ -185,7 +189,7 @@ a:visited {
 
 .btn {
   display: block;
-  margin: 0 auto;
+  margin: 8% auto;
   -webkit-border-radius: 7;
   -moz-border-radius: 7;
   border-radius: 7px;
