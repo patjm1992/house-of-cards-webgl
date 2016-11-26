@@ -52,7 +52,7 @@ h1 {
 
 .art-text-container {
 	margin-top: 10%;
-	margin-bottom: 14%;
+	margin-bottom: 10%;
 }
 
 h2 {
@@ -144,9 +144,17 @@ p {
 	font-family: 'Raleway', serif;
 	color: #C3E4EA; /* Blue (lighter) */
 	font-weight: 400;
-	font-size: 4vmin;
+	font-size: 2.5vmax;
 	line-height: 135%;
 	text-indent: 5vmin;
+}
+
+#block-quote {
+	margin-left: 14.5%;
+	border-left: 7px solid #C3E4EA;
+	padding-left: 3%;
+	font-size: 3.5vmin;
+	text-indent: 0vmin;
 }
 
 .first::first-letter {
@@ -170,7 +178,7 @@ p {
 #l11 { color: #599735; } /* Darker green */
 
 footer {
-	margin: 20% 3% 5% 8.5%;
+	margin: 7% 3% 5% 8.5%;
 }
 
 img {
@@ -262,7 +270,7 @@ a:visited {
   background: #000000;
   padding: 25px 30px 25px 30px;
   text-decoration: none;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
 }
 
 .btn:hover {
@@ -272,8 +280,8 @@ a:visited {
   opacity: 1;
 }
 
-hr {
-	margin: 3% 3% 1% 8.5%;
-}
+
+
+
 
 /**
