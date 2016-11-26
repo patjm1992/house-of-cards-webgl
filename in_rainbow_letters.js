@@ -1,6 +1,6 @@
-var h1_ID = document.getElementById("big-title");
+/* var h1_ID = document.getElementById("big-title"); */
 var h2_ID = document.getElementById("little-title");
-var heading = h1_ID.innerHTML;
+var heading = h2_ID.innerHTML;
 var letters = heading.split("");
 var newSpan = ""
 
@@ -26,6 +26,6 @@ for (var i = 0; i < letters.length; i++) {
 	color_ct += 1;
 }
 
-h1_ID.innerHTML = newSpan;
+/* h1_ID.innerHTML = newSpan; */
 h2_ID.innerHTML = newSpan;
 

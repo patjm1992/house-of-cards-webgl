@@ -32,11 +32,15 @@ header {
 
 
 h1 {
-	margin: 3% 3% 1.25% 4.5%;
+	margin: 2% 3% 0% 4.5%;
 	font-family: 'Raleway', sans-serif;
 	font-size: 8.5vw;
 	letter-spacing: 6px;
 	font-weight: 450;
+}
+
+#second-title {
+	margin-top: -3.5%;
 }
 
 .art-text-container h1 {
@@ -131,12 +135,13 @@ p {
 #l11 { color: #599735; } /* Darker green */
 
 footer {
-	margin: 3% 3% 6% 8.5%;
+	margin: 20% 3% 5% 8.5%;
 }
 
 img {
 	display: block;
 	margin: 0 auto;
+	margin-bottom: 6%;
 	margin-left: 22%;
 	padding: 0;
 	width: 70%;
@@ -158,25 +163,33 @@ a {
 	color: #EB2421;
 }
 
+.inline-link:hover {
+	color: #F3E83C;
+}
 
 .nav-link {
 	font-family: 'Raleway', sans-serif;
 	font-size: 4vmin;
 	font-weight: 400;
-	color: #ED7D26;
+	color: #94D4E2;
 	margin-right: 5%;
 }
 
-a:hover {
-	opacity: 0.85;
-	font-weight: 600;
+.nav-link:hover {
+	color: #F3E83C;
 }
 
 a:link {
 	text-decoration: none;
-	color: #378c9b;
+	color: #94D4E2;
 
 }
+
+a:hover {
+	opacity: 0.85;
+	color: #F3E83C;
+}
+
 
 a:visited {
 	text-decoration: none;
@@ -185,6 +198,7 @@ a:visited {
 
 #copyright {
 	float: right;
+	margin-right: 3%;
 	font-family: 'Raleway', sans-serif;
 	font-size: 4vmin;
 	font-weight: 400;
@@ -195,25 +209,9 @@ a:visited {
 	opacity: 1;
 }
 
-#sep:hover {
-	opacity: 1;
-}
-
-#inspo {
-	color: #73BE48;
-}
-
-#source {
-	color: #EB2421;
-}
-
-#video {
-	color: #629ED3;
-}
-
 .btn {
   display: block;
-  margin: 8% auto;
+  margin: 15% auto;
   -webkit-border-radius: 7;
   -moz-border-radius: 7;
   border-radius: 7px;
@@ -241,86 +239,3 @@ hr {
 }
 
 /**
-@font-face {
-	font-family: in_rainbows, monospace;
-	src : url(fgm.ttf);
-}
-
-
-.title {
-	font-family: in_rainbows;
-font-size: calc(112.5% + 1vw) ;
-	position: fixed;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    letter-spacing: 4px;
-    margin: 0 auto;
-
-
-    text-align: justify;
-}
-
-
-
-#eleventh {
-	position: fixed;
-	top: 3.5%;
-	left: 1.5%;
-	color: #;
-font-family: in_rainbows;
-	font-size: 20px;
-	white-space: nowrap;
-    letter-spacing: 4px;
-}
-
-
-
-
-.title {
-
-	top: 0px;
-
-	font-family: in_rainbows;
-	font-size: 18px;
-	position: fixed;
-
-}
-
-.links {
-	top: 0px;
-	color: inherit;
-	font-family: in_rainbows;
-	font-size: 18px;
-	position: fixed;
-	text-decoration: none;
-}
-
-a {
-	text-align: right!important;
-	float: right;
-	text-decoration: none;
-	letter-spacing: 4px!important;
-	white-space: nowrap!important;
-}
-
-.links a:hover {
-	opacity: 0.75;
-}
-
-a:link {
-	text-decoration: none;
-	color: #C3E4EA;
-}
-
-a:visited {
-	text-decoration: none;
-	color: #C3E4EA;
-}
-
-#
-
-
-**/
