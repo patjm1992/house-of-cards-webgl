@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-@import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy');
+
 
 
 
@@ -243,6 +243,9 @@ a:visited {
 #copyright:hover {
 	opacity: 1;
 }
+
+
+
 
 .btn {
   display: block;
