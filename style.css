@@ -30,7 +30,7 @@ header {
 
 
 h1 {
-	margin: 3% 3% 1.5% 4.5%;
+	margin: 3% 3% 1.25% 4.5%;
 	font-family: 'Raleway', sans-serif;
 	font-size: 8.5vw;
 	letter-spacing: 6px;
@@ -38,9 +38,9 @@ h1 {
 }
 
 h2 {
-	margin: 2% 3% 3% 4.5%;
+	margin: 1% 3% 3% 4.5%;
 	font-family: 'Raleway', sans-serif;
-	font-size: 3.5vw;
+	font-size: 4vw;
 	letter-spacing: 6px;
 	font-weight: 450;
 }
@@ -51,6 +51,7 @@ h4 {
 	font-size: 2.5vmax;
 	font-weight: 400;
 	color: #C3E4EA;
+
 }
 
 .caption {
@@ -140,22 +141,23 @@ a {
 	font-family: 'Raleway', sans-serif;
 	font-size: 4vmin;
 	font-weight: 400;
-	color: #ED7D26;
+	color: #FDEF70;
 }
 
-a .inline-link {
+.inline-link {
+	font-family: 'Raleway', sans-serif;
+	font-size: 4vmin;
+	font-weight: 700;
+	color: #EB2421;
+}
+
+
+
+.nav-link {
 	font-family: 'Raleway', sans-serif;
 	font-size: 4vmin;
 	font-weight: 400;
 	color: #ED7D26;
-}
-
-a .nav-link {
-	font-family: 'Raleway', sans-serif;
-	font-size: 4vmin;
-	font-weight: 400;
-	color: #ED7D26;
-	margin-right: 4vmax;
 }
 
 a:hover {
@@ -164,12 +166,12 @@ a:hover {
 
 a:link {
 	text-decoration: none;
-	color: #C3E4EA;
+	color: #378c9b;
 }
 
 a:visited {
 	text-decoration: none;
-	color: #C3E4EA;
+	color: #9CB6BB;
 }
 
 #copyright {
@@ -198,6 +200,30 @@ a:visited {
 
 #video {
 	color: #629ED3;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: 'Raleway', sans-serif;
+  color: #C3E4EA;
+  border: 2px solid #C3E4EA;
+  font-size: 4vmin;
+  line-height: 135%;
+  letter-spacing: 2.5px;
+  background: #000000;
+  padding: 25px 30px 25px 30px;
+  text-decoration: none;
+  margin-bottom: 10%;
+}
+
+.btn:hover {
+  border: 2px solid #FDEF70;
+  color: #FDEF70;
+  text-decoration: none;
 }
 
 hr {
