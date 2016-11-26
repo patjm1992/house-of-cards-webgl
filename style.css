@@ -38,9 +38,11 @@ h1 {
 }
 
 .art-text-container h1 {
-	margin: -2% 3% -2% 4.5%;
-	letter-spacing: 8.5px;
+	margin: -2% 5% -2% 4.5%;
+	letter-spacing: 9px;
 	text-align: center;
+	 text-align: justify;
+    text-justify: inter-word;
 }
 
 h2 {
@@ -89,32 +91,16 @@ p::first-letter {
 
 /* Letter Colors */
 #l1 { color: #FDEF70; } /* Yellow */
-#l2 { color: #629ED3; } /* */
-#l3 { color: #73BE48; } /* */
-#l4 { color: #ED7D26; }
-#l5 { color: #E0B235; }
-#l6 { color: #C3E4EA; }
-}
-
-#l7 {
-	color: #FDEF70;
-}
-
-#l8 {
-	color: #629ED3;
-}
-
-#l9 {
-	color: #ED7D26;
-}
-
-#l10 {
-	color: #EB2421;
-}
-
-#l11 {
-	color: #73BE48;
-}
+#l2 { color: #629ED3; } /* Blue */
+#l3 { color: #73BE48; } /* Green */
+#l4 { color: #ED7D26; } /* Orange */
+#l5 { color: #E0B235; } /* Darker yellow */
+#l6 { color: #C3E4EA; } /* Lighter blue */
+#l8 { color: #3884C7; } /* Darker blue */
+#l7 { color: #FDF49B; } /* Lighter yellow */
+#l9 { color: #ED7D26; } /* Orange again, lol */
+#l10 { color: #E91916; } /* Red */
+#l11 { color: #599735; } /* Darker green */
 
 footer {
 	margin: 3% 3% 6% 8.5%;
