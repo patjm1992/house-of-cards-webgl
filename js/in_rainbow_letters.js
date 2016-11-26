@@ -22,7 +22,7 @@ for (var i = 0; i < letters.length; i++) {
 	}
 
 	newSpan += "<span id=" + IDs[color_ct] + ">" + letters[i] + "<\/span>";
-	console.log(newSpan);
+
 	color_ct += 1;
 }
 

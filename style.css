@@ -66,6 +66,7 @@ h2 {
     text-justify: inter-word;
 }
 
+/* iPhone 6 */
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
@@ -83,6 +84,40 @@ and (max-device-width : 667px) {
 
 }
 
+/* iPhone 5 */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+	h2 {
+		font-size: 3.0vw;
+		letter-spacing: 6.48px;
+	}
+
+	.art-text-container h1 {
+		margin: -2% 10% -2% 10%;
+		letter-spacing: 8px;
+		text-align: justify;
+	    text-justify: inter-word;
+	}
+}
+
+/* iPhone 4 */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	h2 {
+		font-size: 3.0vw;
+		letter-spacing: 6.48px;
+	}
+
+	.art-text-container h1 {
+		margin: -2% 10% -2% 10%;
+		letter-spacing: 8px;
+		text-align: justify;
+	    text-justify: inter-word;
+	}
+
+}
 
 
 h4 {
