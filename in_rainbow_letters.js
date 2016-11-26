@@ -1,10 +1,11 @@
-var headingID = document.getElementById("title");
-var heading = headingID.innerHTML;
+var h1_ID = document.getElementById("big-title");
+var h2_ID = document.getElementById("little-title");
+var heading = h1_ID.innerHTML;
 var letters = heading.split("");
 var newSpan = ""
 
-var IDs = ["l1", "l2", "l3", "l4", "l5",
-			   "l6", "l7", "l8", "l9", "l10", "l11"];
+var IDs = ["l1", "l8", "l4", "l3", "l5", "l10",
+			   "l6", "l1", "l8", "l4"];
 
 var color_ct = 0
 
@@ -25,31 +26,6 @@ for (var i = 0; i < letters.length; i++) {
 	color_ct += 1;
 }
 
-headingID.innerHTML = newSpan;
+h1_ID.innerHTML = newSpan;
+h2_ID.innerHTML = newSpan;
 
-var headingID = document.getElementById("copyright");
-var heading = headingID.innerHTML;
-var letters = heading.split("");
-var newSpan = ""
-
-var IDs = ["l1", "l2", "l3", "l4", "l5",
-			   "l6", "l7", "l8", "l9", "l10", "l11"];
-
-var color_ct = 0
-
-for (var i = 0; i < letters.length; i++) {
-	/* Wrap colors */
-	if (color_ct == 10) {
-		color_ct = 0;
-	}
-
-	if (letters[i] == ' ') {
-		newSpan += "<span>" + letters[i] + "<\/span>";
-		continue;
-	}
-
-	newSpan += "<span id=" + IDs[color_ct] + ">" + letters[i] + "<\/span>";
-	color_ct += 1;
-}
-
-headingID.innerHTML = newSpan;
