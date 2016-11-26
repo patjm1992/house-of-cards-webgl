@@ -1,3 +1,7 @@
+$("begin-btn").click(function() {
+
+});
+
 /*$("html").click(function() {
 	var speed = 1000;
 
@@ -10,13 +14,7 @@
 });
 
 */
-$(document).ready(function() {
 
-	$("#title").typed({
-	            stringsElement: $('give me five'),
-	            typeSpeed: 0
-	        });
-	    });
 /*
 	$("#title").letterFade({
 	    fade: 'in',   // fade letters 'in' or 'out'

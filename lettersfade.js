@@ -33,7 +33,7 @@
           newstring += '<span style="opacity: '+opacity+'" class="blinky_'+ident+'">'+value+'</span>';
       });
 
-  
+
 
       $this.html(newstring);
       $this.show();
