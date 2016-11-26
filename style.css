@@ -131,26 +131,31 @@ img {
 }
 
 footer {
-	margin: 3%;
+	margin: 3% 3% 6% 8.5%;
 }
 
-.inline-link {
+
+
+a {
 	font-family: 'Raleway', sans-serif;
 	font-size: 4vmin;
 	font-weight: 400;
 	color: #ED7D26;
 }
 
-a {
+a .inline-link {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.5vmax;
+	font-size: 4vmin;
 	font-weight: 400;
 	color: #ED7D26;
-	display: inline;
-	padding: 0;
-	margin-left: 5%;
-	margin-bottom: 15;
-	margin-right: 3%;
+}
+
+a .nav-link {
+	font-family: 'Raleway', sans-serif;
+	font-size: 4vmin;
+	font-weight: 400;
+	color: #ED7D26;
+	margin-right: 4vmax;
 }
 
 a:hover {
@@ -169,6 +174,10 @@ a:visited {
 
 #copyright {
 	float: right;
+	font-family: 'Raleway', sans-serif;
+	font-size: 4vmin;
+	font-weight: 400;
+	color: #C3E4EA;
 }
 
 #copyright:hover {
