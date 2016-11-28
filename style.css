@@ -157,11 +157,7 @@ p {
 	text-indent: 0vmin;
 }
 
-.first::first-letter {
-    font-size: 250%;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
+
 
 
 /* Letter Colors */
